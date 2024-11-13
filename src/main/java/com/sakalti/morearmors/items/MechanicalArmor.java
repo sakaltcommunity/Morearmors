@@ -10,11 +10,13 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.util.SoundEvents;
 import net.minecraftforge.event.entity.living.LivingEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import com.sakalti.morearmors.MoreArmors;
 
 @Mod.EventBusSubscriber
 public class MechanicalArmor extends ArmorItem {
@@ -74,6 +76,11 @@ public class MechanicalArmor extends ArmorItem {
 
     public MechanicalArmor(EquipmentSlotType slot) {
         super(MECHANICAL_ARMOR_MATERIAL, slot, new Item.Properties().group(ItemGroup.COMBAT));
+    }
+
+    @Override
+    public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
+        return new ResourceLocation(MoreArmors.MODID, "textures/models/armor/mechanical_armor_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png").toString();
     }
 
     @SubscribeEvent
