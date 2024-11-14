@@ -67,7 +67,7 @@ public class CrystalArmor extends ArmorItem {
 
         @Override
         public float getToughness() {
-            return 2.0f;
+            return 2.5f;
         }
 
         @Override
