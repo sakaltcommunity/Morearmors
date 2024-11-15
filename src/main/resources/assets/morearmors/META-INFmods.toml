@@ -1,6 +1,6 @@
 modLoader="javafml"
 loaderVersion="[44,)" # 1.20.1はForgeバージョン44以降が必要
-license="MIT"
+license="cc0-1.0"
 [[mods]]
 modId="morearmors"
 version="1.0"
@@ -9,7 +9,7 @@ description="防具を追加します。"
 
 # サポートされるバージョン
 [[dependencies.simpleweapon]]
-    modId="forge"ひ
+    modId="forge"
     mandatory=true
     versionRange="[44,)"
     ordering="NONE"
