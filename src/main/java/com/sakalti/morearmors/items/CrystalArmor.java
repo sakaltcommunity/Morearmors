@@ -27,9 +27,9 @@ public class CrystalArmor extends ArmorItem {
         public int getDurability(EquipmentSlotType slot) {
             switch (slot) {
                 case HEAD: return 381;
-                case CHEST: return 492;
-                case LEGS: return 444;
-                case FEET: return 365;
+                case CHEST: return 589;
+                case LEGS: return 486;
+                case FEET: return 363;
                 default: return 0;
             }
         }
