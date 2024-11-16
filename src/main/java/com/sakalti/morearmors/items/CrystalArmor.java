@@ -47,7 +47,7 @@ public class CrystalArmor extends ArmorItem {
 
         @Override
         public int getEnchantability() {
-            return 18;
+            return 12;
         }
 
         @Override
@@ -72,7 +72,7 @@ public class CrystalArmor extends ArmorItem {
 
         @Override
         public float getKnockbackResistance() {
-            return 0.0f;
+            return 0.5f;
         }
     };
 
