@@ -7,8 +7,8 @@ import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.crafting.Ingredient;
 
 public class NetherStarArmorMaterial implements ArmorMaterial {
-    private static final int[] DURABILITY = new int[]{1024, 1024, 1024, 1024};
-    private static final int[] DEFENSE = new int[]{6, 8, 6, 4};  // 合計24
+    private static final int[] DURABILITY = new int[]{555, 675, 640, 512};
+    private static final int[] DEFENSE = new int[]{5, 8, 6, 5};  // 合計22
 
     @Override
     public int getDurabilityForSlot(EquipmentSlot slot) {
@@ -42,11 +42,11 @@ public class NetherStarArmorMaterial implements ArmorMaterial {
 
     @Override
     public float getToughness() {
-        return 3.0f;
+        return 3.5f;
     }
 
     @Override
     public float getKnockbackResistance() {
-        return 0.1f;
+        return 0.6f;
     }
 }
