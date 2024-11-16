@@ -1,13 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "XXX",
-    "X X",
-    "X X"
+    "XSC",
+    "C C",
+    "C C"
   ],
   "key": {
     "X": {
       "item": "minecraft:nether_star"
+    },
+    "C": {
+      "item": "minecraft:chorus_flower"
+    },
+    "S": {
+      "item": "minecraft:shulker_shell"
     }
   },
   "result": {
